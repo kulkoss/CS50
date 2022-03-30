@@ -33,12 +33,15 @@ int main(int argc, string argv[])
     // Prompt user for plaintext
     string plaintext = get_string("plaintext:  ");
 
-    printf("%c\n", rotate(plaintext, key)); //zwraca char z funkcji rotate
+    //printf("%c\n", rotate(plaintext, key)); //zwraca char z funkcji rotate
+    rotate(plaintext, key);
+    printf("\n");
 }
 
 
 char rotate(string s, int key)
 {
+    printf("ciphertext: ");
     for (int i = 0, j = strlen(s); i < j; i++)
     {
         if (isupper(s[i]))
