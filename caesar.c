@@ -4,7 +4,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-char rotate (int key, char plaintext);
+char rotate(string s, int key);
 
 int main(int argc, string argv[])
 {
@@ -33,7 +33,7 @@ int main(int argc, string argv[])
     // Prompt user for plaintext
     string plaintext = get_string("plaintext:  ");
 
-    printf("%c", rotate(plaintext, key)); //zwraca char z funkcji rotate
+    printf("%c\n", rotate(plaintext, key)); //zwraca char z funkcji rotate
 }
 
 
